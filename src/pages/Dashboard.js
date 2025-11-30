@@ -2,8 +2,6 @@ import React, { useMemo, useState } from "react";
 import { useFinance } from "../context/FinanceContext";
 import SummaryCard from "../components/SummaryCard";
 import {
- LineChart,
-  Line,
   XAxis,
   YAxis,
   Tooltip,
@@ -204,3 +202,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
