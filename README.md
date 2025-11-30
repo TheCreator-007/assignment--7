@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Assignment-7 Personal Finance Tracker (React + Context + LocalStorage + Charts)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a complete **Personal Finance Management** application built using **React**, **Context API**, **LocalStorage**, **Recharts**, and **React Toastify**.  
+It provides a full financial dashboard with income, expenses, budgets, transactions, profile settings, and data visualizations — all in a modern and responsive UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌍 Live Demo
 
-### `npm start`
+Visit the deployed project:  
+👉 **https://finance-assignment-7.netlify.app/**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🏠 Global Layout
+- Global **Header** and **Footer** across the app
+- Responsive design for **mobile, tablet, and desktop**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📊 Dashboard Page
+- Four summary cards:
+  - **Total Income**
+  - **Total Expenses**
+  - **Remaining Budget**
+  - **Savings**
+- Interactive charts:
+  - **Monthly spending trend** (Bar chart)
+  - **Category-wise expense distribution** (Pie chart)
+- **Today's Expenses** table (Amount, Category, Note)
+- Date Filter:
+  - Filter all dashboard data by **date** or **date range**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💰 Transactions Page
+- Full transaction list with a sortable table:
+  - Type (Income / Expense)
+  - Amount
+  - Category
+  - Date
+  - Description
+- Add Transaction:
+  - Type, Amount, Category, Date, Description
+- Edit Transaction (auto-fill form)
+- Delete Transaction (with toast feedback)
+- All transactions stored in **localStorage**
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Budgets Page
+- Set monthly budgets per category (e.g., ₹10,000 Groceries)
+- Dynamic progress bars showing:
+  - Current spend vs. budget
+- Overspend Alert:
+  - Toast + visual highlight when spending exceeds limit
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👤 Profile Page
+- View and edit user details (Name, Email)
+- Change default currency (₹, $, €, £)
+- Lifetime stats:
+  - Total Income
+  - Total Expenses
+  - Total Savings
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔔 Notifications (React Toastify)
+- Toast alerts for:
+  - Adding transactions
+  - Editing transactions
+  - Deleting transactions
+  - Adding/updating budgets
+  - Overspending alerts
+  - Profile updates
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
